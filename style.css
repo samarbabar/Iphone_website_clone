@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     
 }
 nav{
@@ -31,6 +32,7 @@ nav li{
 .dropdownbox{
     position: absolute;
     top: 48px;
+    margin-top: 0;
     left: 0;
     width: 100%;
     height: 80vh;
@@ -43,18 +45,26 @@ nav li{
     transition: all 0.3s ease;
     transform: translateY(-10px);
 }
+.dropdownbox::before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+}
 .blur{
     position: absolute;
     top: 70vh;
     left: 0;
-    width: 99%;
-    height: 30vh;
+    width: 100%;
+    height: 23vh;
     
     background:#e7e7e8;
     display: none;
     z-index: 8;
 }
-.store:hover  .dropdownbox{
+.store:hover > .dropdownbox,.dropdownbox:hover{
     display: block;
     visibility: visible;
     pointer-events: auto;
@@ -62,6 +72,7 @@ nav li{
     transform: translateY(0);
     opacity: 1;
 }
+
 .inner{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -148,4 +159,172 @@ nav li{
 .credit a{
     text-decoration: none;
     color: rgb(0, 102, 204);
+}
+.iphone{
+    padding: 49px 80px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 80px;
+    line-height: 84px;
+    color: black;
+    font-weight: 600;
+    
+}
+.iphoneimg{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+    
+    justify-content: center;
+
+}
+.iphoneimg div{
+    
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.iphoneimg img{
+    height: 80px;
+    width: 47px;
+    
+}
+.pic{
+    text-align: center;
+}
+
+.p1{
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: black;
+}
+.p2{
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: rgb(182, 68, 0); 
+}
+.models{
+    margin: 60px 0px;
+    height: 350vh;
+    width: 100vw;
+    background-color: #F5F5F7;
+
+}
+.models h1{
+   padding-left: 80px;
+    padding-bottom: 50px;
+    padding-top: 150px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 56px;
+    line-height: 60px;
+    color: black;
+    font-weight: 600;
+ 
+    
+}
+.lineupgrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+    
+    justify-content: center;
+
+}
+.lineupgrid div{
+    
+    border-radius: 10px;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.lineupgrid img{
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    border: transparent;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    
+}
+.lineupgrid img:hover{
+    transform: scale(1.03);
+}
+.m{
+    text-align: center;
+}
+
+.mp1{
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    color: black;
+}
+.mp2{
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 32px;
+    color: rgb(182, 68, 0); 
+}
+.mp3{
+     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    color: black;
+    text-align: center;
+    width: 60%;
+    margin-left: 73px;
+    margin-top: 10px;
+}
+.mp4{
+     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+    color: black;
+    margin-top: 30px;
+}
+.mp5{
+    display: inline-block;
+     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 40px;
+    color: white;
+    background-color:  rgb(0, 102, 204);
+    height: 7vh;
+    width: 10vw;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.mp6{
+    display: inline;
+     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    color:  rgb(0, 102, 204);
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 30px;
+
+
 }
