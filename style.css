@@ -584,6 +584,8 @@ cursor: pointer;
 }
 
 .essentialsgrid {
+     border: #F5F5F7;
+    border-radius: 30px;
     cursor: pointer;
     height: auto;
     margin-bottom: 50px;
@@ -642,7 +644,8 @@ cursor: pointer;
     width: 88%;
     height: auto;
     margin: 0 auto;
-
+ border: #F5F5F7;
+    border-radius: 30px;
 
 
 }
@@ -669,7 +672,8 @@ cursor: pointer;
     width: 549px;
     object-fit: cover;
     border: transparent;
-
+ border: #F5F5F7;
+    border-radius: 30px;
 
     cursor: pointer;
     transition: transform 0.4s ease;
